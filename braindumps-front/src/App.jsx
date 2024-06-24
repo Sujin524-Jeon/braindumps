@@ -1,10 +1,9 @@
 import './App.css';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import Login from "./pages/Login";
-import GoodDumps from './pages/GoodDumps';
+import Main from './pages/Main';
 import Analyze from "./pages/Analyze";
 import Notfound from "./pages/Notfound";
-import Menubar from './components/Menubar';
 
 function App() {
 
@@ -12,12 +11,10 @@ function App() {
 
   return (
     <>
-      <div>
-        <Menubar />
-      </div>
       <Routes>
+        <Route path="/" element={<Login />}></Route>
         <Route path="/login" element={<Login />}></Route>
-        <Route path="/gooddumps" element={<GoodDumps />}></Route>
+        <Route path="/main/:userId" element={<Main />}></Route>
         <Route path="/analyze" element={<Analyze />}></Route>
         <Route path="*" element={<Notfound />}></Route>
       </Routes>
