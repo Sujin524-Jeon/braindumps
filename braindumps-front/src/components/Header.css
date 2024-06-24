@@ -1,0 +1,19 @@
+.Header {
+    height: 64px;
+    width: 100%;
+    background-color: rgb(217, 217, 217);
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header > div {
+    display: flex;
+}
+
+.Header .profileImg_section {
+    height: 64px;
+    width: 64px;
+    display: flex;
+    align-items: center;
+}

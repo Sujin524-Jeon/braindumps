@@ -1,8 +1,26 @@
 @font-face {
-    font-family: "WavvePADO";
-    src: url("/WavvePADO-Regular.ttf");
+    font-family: "GmarketSansTTFMedium";
+    src: url("/GmarketSansTTFMedium.ttf");
+}
+
+html, body {
+    margin: 0px;
+    width: 100%;
+    background-color: rgb(246, 246, 246);
+    display: flex;
+}
+
+#root {
+    background-color: white;
+    max-width: 100vw;
+    width: 100%;
+    /* 화면 가운데 배치 */
+    /* margin: 0 auto;    */
+    min-height: 100vh;
+    height: 100%;
+    justify-content: center;
 }
 
 body * {
-    font-family: "WavvePADO";
+    font-family: "GmarketSansTTFMedium";
 }

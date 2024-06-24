@@ -1,5 +1,9 @@
+import "./Profile.css";
+
 const Profile = () => {
-    return <div>상단바 프로필이미지</div>
+    return (
+            <img className="Profile" src="../public/profile-test.jpg" />
+    )
 }
 
 export default Profile;
